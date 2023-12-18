@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="558.0" prefWidth="786.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lr5db.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <TableView fx:id="TableShow" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="IdColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="LastNameColumn" prefWidth="75.0" text="LastName" />
+            <TableColumn fx:id="FirstNameColumn" prefWidth="75.0" text="FirstName" />
+            <TableColumn fx:id="TypeDocColumn" prefWidth="75.0" text="TypeDoc" />
+        </columns>
+      </TableView>
+      <HBox prefHeight="222.0" prefWidth="642.0">
+         <children>
+            <VBox prefHeight="92.0" prefWidth="350.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="76.0" text="ID клієнта:" />
+                  <TextField fx:id="ID" prefHeight="18.0" prefWidth="350.0" />
+                  <Label prefHeight="18.0" prefWidth="71.0" text="Призвіще:" />
+                  <TextField fx:id="LastName" />
+                  <Label prefHeight="18.0" prefWidth="51.0" text="Ім'я:" />
+                  <TextField fx:id="FirstName" />
+                  <Label prefHeight="18.0" prefWidth="92.0" text="Тип Документа:" />
+                  <TextField fx:id="TypeDoc" />
+               </children>
+            </VBox>
+            <VBox prefHeight="222.0" prefWidth="298.0">
+               <children>
+                  <Button fx:id="addButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="293.0" text="Додати" onAction="#AddButtonAction" />
+                  <Button fx:id="deleteButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="294.0" text="Видалити" onAction="#DeleteButtonAction" />
+                  <Button fx:id="updateButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="295.0" text="Відновити" onAction="#UpdateButtonAction"/>
+                  <Button fx:id="showButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="294.0" text="Подивитися" onAction="#ShowButtonAction" />
+               </children>
+            </VBox>
+         </children></HBox>
+     
+   </children>
+</VBox>
